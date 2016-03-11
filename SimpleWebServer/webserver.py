@@ -11,7 +11,7 @@ class myHandler(BaseHTTPRequestHandler):
 		self.send_header('Content-type','text/html')
 		self.end_headers()
 		# Send the html message
-		self.wfile.write("booger".encode())
+		self.wfile.write("sugar magnolia".encode())
 
 try:
     server = HTTPServer(('', PORT_NUMBER), myHandler)

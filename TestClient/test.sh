@@ -1,9 +1,7 @@
 #!/bin/bash
 
-echo $1
-echo $2
-test=$(curl http://$1:$2)
-if [ "$test" == "booger" ]; then
+response=$(curl -s http://$1:$2)
+if [ "$response" == "sugar magnolia" ]; then
   echo "success!"
   exit 0
 fi
